@@ -23,14 +23,13 @@ Both revisions share the same core sensing/storage/connectivity architecture; Re
 ├── hardware/
 │   ├── rev1/                     # IoT Development Board (original revision)
 │   │   ├── README.md             # Full hardware documentation for Rev 1
-│   │   └── ...                   # KiCad project, Gerbers, BOM, libraries
+│   │   └── ...                   # KiCad project, BOM, libraries
 │   │
 │   └── rev2/                     # Secure-Ready Battery-Powered Edge Logger (current revision)
 │       ├── README.md             # Full hardware documentation for Rev 2
-│       └── ...                   # KiCad project, Gerbers, BOM, libraries
+│       └── ...                   # KiCad project, BOM, libraries
 │
-├── zephyr/
-│   └── README.md                 # Zephyr RTOS board port — Devicetree, Kconfig, build/debug docs
+
 │
 └── README.md                     # This file
 ```
