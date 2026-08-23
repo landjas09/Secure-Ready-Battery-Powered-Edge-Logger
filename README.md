@@ -1,5 +1,5 @@
 <!-- Adjust the title/tagline if you want a different overarching project name — this uses the Rev 2 name since it's the current state of the project. -->
-
+# Secure-Ready Battery-Powered Edge Logger
 <p align="center"> <img src="images/board.png" alt="ESP32-C3 Secure Edge Logger — assembled board" width="600"> </p>
 # Secure-Ready Battery-Powered Edge Logger
 
