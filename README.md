@@ -53,7 +53,7 @@ Both revisions share the same core sensing/storage/connectivity architecture; Re
 | Connectivity | USB-C, CP2102N USB-UART, OLED I²C header | Unchanged |
 | Firmware target | Zephyr RTOS | Zephyr RTOS |
 
-Full rationale for each Rev 2 change — including the buck-boost layout, Kelvin sensing wiring, and shared I²C bus considerations across five devices — is documented in [`hardware/rev2/README.md`](hardware/rev2/README.md).
+Full rationale for each Rev 2 change — including the buck-boost layout, Kelvin sensing wiring, and shared I²C bus considerations across five devices — is documented in [`hardware/rev2_secure-edge-logger/README.md`](hardware/rev2_secure-edge-logger/README.md).
 
 ---
 
