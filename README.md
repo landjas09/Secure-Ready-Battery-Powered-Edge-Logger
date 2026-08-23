@@ -1,9 +1,9 @@
 <!-- Adjust the title/tagline if you want a different overarching project name — this uses the Rev 2 name since it's the current state of the project. -->
-# ESP32-C3 Secure Edge Logger
+# Secure-Ready Battery-Powered Edge Logger
 
 A custom ESP32-C3 hardware/firmware platform, developed across two revisions — from a general-purpose IoT sensor board into a battery-aware, timestamped, secure-ready edge data logger. Designed end-to-end in KiCad, ported to Zephyr RTOS.
 
-This repository contains the full hardware design (schematics, PCB layout, BOM, Gerbers) for both revisions, and the corresponding Zephyr board support package.
+This repository contains the full hardware design (schematics, PCB layout, BOM) for both revisions.
 
 ---
 
