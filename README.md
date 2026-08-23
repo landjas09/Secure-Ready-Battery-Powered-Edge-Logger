@@ -97,7 +97,7 @@ See [`zephyr/README.md`](zephyr/README.md) for the full board architecture, peri
 
 ## Where to Go Next
 
-- **New to the project?** Start with [`hardware/rev1/README.md`](hardware/rev1/README.md) for the original, simpler architecture.
+- **New to the project?** Start with [`hardware/rev1/README.md`](hardware/rev1_iot-development-board) for the original, simpler architecture.
 - **Interested in the current hardware?** Go to [`hardware/rev2/README.md`](hardware/rev2/README.md) for the full secure edge-logger design.
 - **Interested in the firmware/RTOS side?** Go to [`zephyr/README.md`](zephyr/README.md) for the board port documentation.
 
