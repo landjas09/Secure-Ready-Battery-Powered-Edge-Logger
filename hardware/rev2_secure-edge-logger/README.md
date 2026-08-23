@@ -156,7 +156,7 @@ ESP32 GPIO3 / SCL ──┬── BME280
                     └── SE050E2
 ```
 
-The bus uses a single shared pull-up network located near the BME280 — since every device sits on the same SDA/SCL nets, all five devices share the same pull-up pair rather than each getting its own. Routing is primarily linear, with a short branch/stub to the SE050E2. Bus speed is currently configured conservatively in the Zephyr board definition, pending post-fabrication validation of SDA/SCL rise time across all five devices.
+The bus uses a single shared pull-up network located near the BME280 — since every device sits on the same SDA/SCL nets, all five devices share the same pull-up pair rather than each getting its own. Routing is primarily linear, with a short branch/stub to the SE050E2. Bus speed is currently configured conservatively in the Zephyr board definition.
 
 ---
 
@@ -185,12 +185,10 @@ This is a native **KiCad 10** hierarchical project — keep the main project fil
 ├── sensors.kicad_sch                   # Sub-sheet: BME280, light sensor, mic/amp
 ├── userInterface.kicad_sch             # Sub-sheet: BOOT/EN buttons, OLED header, breakout
 │
-├── Gerbers/                            # Exported Gerber/drill files, once generated
 ├── Libraries/                          # Custom footprints, symbols, and 3D models
 ├── BOM.csv                             # Bill of materials
 ├── fp-lib-table                        # Footprint library table
 ├── sym-lib-table                       # Symbol library table
-└── renders/                            # PCB renders / project images
 ```
 
 > Lock files (`*.lck`), `.history/`, and `.git/` are local/version-control housekeeping and not part of the design itself.
@@ -215,8 +213,6 @@ This is a native **KiCad 10** hierarchical project — keep the main project fil
 ## Planned Additions
 
 - **Enclosure design (SolidWorks)** — case built around the Rev 2 board's exported KiCad STEP file, with cutouts for the USB-C port, BOOT/EN buttons, status LEDs, SD card slot, and a light-transmissive window over the ambient light sensor.
-- **Firmware-level use of the SE050E2** — provisioning device keys and implementing signing/authentication flows, moving the board from *secure-ready* to actually secured.
-- **Battery runtime characterization** — active/sleep current measurement once hardware is available, to validate real-world battery life against the BQ27441's reporting.
 
 ---
 
