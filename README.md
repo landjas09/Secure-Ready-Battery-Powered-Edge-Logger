@@ -81,7 +81,7 @@ Taken together, Rev 1 — the **IoT Development Board** — validated *that the 
 
 Both revisions target a common **Zephyr RTOS** board port (`iot_sensor_node_esp32c3`), built from scratch rather than as an overlay on an existing Espressif reference board — the SoC layer is inherited from Zephyr's existing ESP32-C3 support, with Devicetree, pinctrl, and Kconfig scoped to this board's actual hardware.
 
-See [`zephyr/README.md`](zephyr/README.md) for the full board architecture, peripheral integration (I²C, SPI, ADC, UART, GPIO), debugging/OpenOCD setup, and the specific integration issues encountered and resolved during the port.
+See [`zephyr/README.md`](https://github.com/landjas09/Zephyr-RTOS-Port/blob/db37eb44f9d1a81693981f7a8ff599a05c521f56/README.md) for the full board architecture, peripheral integration (I²C, SPI, ADC, UART, GPIO), debugging/OpenOCD setup, and the specific integration issues encountered and resolved during the port.
 
 ---
 
