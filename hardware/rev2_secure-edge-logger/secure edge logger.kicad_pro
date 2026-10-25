@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 0.0,
+          "height": 0.5334,
+          "width": 1.8796
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -63,8 +63,8 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
-          "remove_islands": 0,
+          "pad_connection": 2,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -86,7 +86,12 @@
           "width": 0.25
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "footprint_type_mismatch|225150000|85925000|030e9bd9-065b-4b8c-ad5f-90ee13d8632d|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -104,10 +109,10 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "ignore",
+        "footprint_filters_mismatch": "error",
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
@@ -117,7 +122,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -132,10 +137,10 @@
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
         "silk_over_copper": "ignore",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
-        "starved_thermal": "ignore",
+        "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
         "text_thickness": "ignore",
@@ -143,7 +148,7 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
-        "track_not_centered_on_via": "ignore",
+        "track_not_centered_on_via": "error",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
@@ -532,7 +537,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "IOT DEV BOARD.kicad_pro",
+    "filename": "secure edge logger.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -833,7 +838,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "ESP32_IOT_BOARD_GERBER",
+      "plot": "Gerber/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -942,19 +947,19 @@
           "group_by": false,
           "label": "MANUFACTURER",
           "name": "MANUFACTURER",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Manufacturer_Name",
           "name": "Manufacturer_Name",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manufacturer_Part_Number",
           "name": "Manufacturer_Part_Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -1063,6 +1068,54 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Power",
+          "name": "Power",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric",
+          "name": "Dielectric",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part number",
+          "name": "Part number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacurer",
+          "name": "Manufacurer",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1070,7 +1123,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": false,
-      "sort_field": "${EXCLUDE_FROM_BOM}"
+      "sort_field": "Description"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -1108,18 +1161,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "IOT DEV BOARD.kicad_sch",
-        "name": "IOT DEV BOARD",
+        "filename": "secure edge logger.kicad_sch",
+        "name": "secure edge logger",
         "uuid": "3745b2cd-5a43-47a1-952a-791aad1fc984"
       }
     ],
-    "used_designators": "BOOT1,#FLG1-2,#FLG4-5,R1-4,R30-39,J1,J5-6,U1-2,U8-9,VR1,#PWR19,#PWR51-52,#PWR59-100,C3,C23-33,ENABLE1,S3,BT1,IC1-2,L1,BREAKOUT1,OLED1,PWR1,RX1,TX1",
+    "used_designators": "BOOT1,#FLG1-2,#FLG4-5,R1-4,R30-39,R210-214,J1,J5-6,U1-2,U8-9,U304,VR1,#PWR16,#PWR19,#PWR29,#PWR50-52,#PWR59-105,C3,C23-33,C208-211,C310-311,ENABLE1,S3,BT1,IC1-2,L1,L101,BREAKOUT1,OLED1,PWR1,RX1,TX1",
     "variants": []
   },
   "sheets": [
     [
       "3745b2cd-5a43-47a1-952a-791aad1fc984",
-      "IOT DEV BOARD"
+      "secure edge logger"
     ],
     [
       "15c8a545-dc95-4358-b65d-572ad4443c8b",
