@@ -1,4 +1,4 @@
-<p align="center"> <img src="images/board.png" alt="ESP32-C3 Secure Edge Logger — assembled board" width="600"> </p>
+<p align="center"> <img src="board.png" alt="ESP32-C3 Secure Edge Logger — assembled board" width="600"> </p>
 
 # Secure-Ready Battery-Powered Edge Logger
 
