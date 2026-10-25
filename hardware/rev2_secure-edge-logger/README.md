@@ -4,7 +4,7 @@
 
 A custom embedded platform for collecting environmental, light, and acoustic signals, storing data locally, and developing battery-aware logging applications. The hardware combines an ESP32-C3 with a buck-boost power supply, a fuel gauge, a battery-backed RTC, and a dedicated secure element.
 
-![Rev 2 Edge Logger PCB — dark studio CAD rendering](doc/Edge_Logger_Dark_Hero_01.png.png)
+![Rev 2 Edge Logger PCB — dark studio CAD rendering](doc/Edge_Logger_Dark_Hero_01.png)
 
 *CAD rendering of the revised design. Hardware fabrication and bench validation are pending.*
 
